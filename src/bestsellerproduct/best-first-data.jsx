@@ -2,11 +2,11 @@ import { ShoppingBag } from "lucide-react"
 import axios from 'axios'
 import { useEffect } from "react";
 export default function Sellerdata(props){
- useEffect(()=>{
- axios.get('https://fakestoreapi.com/products')
- .then(res=>res.json())
- .then(json=>console.log(json))
- },[])
+//  useEffect(()=>{
+//  axios.get('https://fakestoreapi.com/products')
+//  .then(res=>res.json())
+//  .then(json=>console.log(json))
+//  },[])
     const getStatusClass = (status) => {
         switch (status) {
           case "New":

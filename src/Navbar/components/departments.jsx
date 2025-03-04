@@ -6,7 +6,7 @@ export default function Dept() {
     const [open, setOpen] = useState(false);
     return (
         <>
-            <div className="pt-5 flex grid grid-cols-12 ">
+            <div className="pt-5  grid grid-cols-12 ">
                 <div className="col-span-2 pl-3 hidden lg:block">
                     <Dropdown label="All Departments" dismissOnClick={false} className="">
                         <Dropdown.Item><i class="fa-solid fa-headphones pr-2"></i> Headphones</Dropdown.Item>
@@ -15,7 +15,7 @@ export default function Dept() {
                         <Dropdown.Item><i class="fa-solid fa-computer pr-2"></i>Computer/laptop</Dropdown.Item>
                     </Dropdown>
                 </div>
-                <div className="nav-menu grid lg:col-span-8 grid md:col-span-12  hidden md:block sm:hidden ">
+                <div className="nav-menu  lg:col-span-8  md:col-span-12  hidden md:block sm:hidden ">
                     <ul className="flex  gap-10  lg:justify-center md:justify-center ">
                         <li><a href="/" className="text-red-500">Home</a></li>
                         <li><a href="#" className="hover:text-red-500">About</a></li>
@@ -39,7 +39,7 @@ export default function Dept() {
                         <li><a href="#" className="hover:text-red-500">Contact</a></li>
                     </ul>
                 </div>
-                <div className="Helpline  grid col-span-2 items-end hidden lg:block">
+                <div className="Helpline   col-span-2 items-end hidden lg:block">
                     <p><i className="fa-solid fa-tty pr-2 text-red-500"></i>CALL US 24/7</p>
                     <p className="text-red-500">9876543210</p>
                 </div>
