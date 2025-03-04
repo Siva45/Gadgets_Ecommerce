@@ -1,0 +1,64 @@
+/* body{
+    background-image: url("todobg2.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.first img{
+    height: 650px;
+    width: 800px;
+}
+.first-img img{
+    height: auto;
+    width: auto;
+    max-width:90% ;  
+}
+
+.card-content{
+    background-color: #f0f2f5;  
+}
+.login-bg{
+    background-color: #e9e9e9 ;
+    padding-top: 100px;
+}
+
+@media only screen  and(max-width: 425px){
+    
+}
+.badge-new {
+    background-color: green;
+    font-size: 12px;
+    padding: 0 4px 0 4px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .badge-sold-out {
+    background-color: red;
+    font-size: 12px;
+    padding: 0 4px 0 4px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .badge-hot {
+    background-color: orange;
+    font-size: 12px;
+    padding: 0 4px 0 4px;
+    border-radius: 10px;
+    color: white;
+  }
+
+/* @media only screen and(min-width: 768px)and(max-width:1023){
+    /* .figure1{
+        flex: none;
+        display: none;
+    } */
+    /* .first img{
+        
+        width: 1000px;
+    }
+    .figure p{
+        color: chartreuse;
+    }
+
+} */ 
