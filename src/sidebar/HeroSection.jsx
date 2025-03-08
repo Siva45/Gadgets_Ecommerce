@@ -1,8 +1,9 @@
 
 import Drawers from "./drawer";
-
+import { useNavigate } from "react-router-dom";
 
 export default function Header(){
+    const navigate =useNavigate();
  
     return(
         <>
@@ -24,7 +25,7 @@ export default function Header(){
       
        </div>
         <div className="flex col-span-1 justify-evenly items-center">
-        <a href="/login" className="lg:border-r-2 lg:pr-2 hidden lg:block">Login / SignIn</a>
+        <p className="lg:border-r-2 lg:pr-2 hidden lg:block cursor-pointer hover:text-red-500" onClick={()=>navigate("/login")}>Login / SignIn</p>
         <i className="fa-solid fa-magnifying-glass md:hidden"></i>
         <a href="/login"><i className="fa-regular fa-user  lg:hidden"></i></a>
         <a href=""><i className="fa-regular fa-heart md:text-xl "></i></a>

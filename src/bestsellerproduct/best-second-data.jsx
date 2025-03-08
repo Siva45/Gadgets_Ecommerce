@@ -1,12 +1,14 @@
 import { ShoppingBag } from "lucide-react"
+
 export default function Sellersdata(props){
  const {image,title,price}=props   
+
  return(
     <>
    <section>
     <div className=" p-9 relative ">
         <img src={image} alt className="" />
-        <p className="pb-2">{title}</p>
+        <p className="pb-2" >{title}</p>
         <p className="pb-2 text-xl text-red-500">{price}</p>
         <i class="fa-solid fa-star text-amber-500"></i>
         <i class="fa-solid fa-star text-amber-500"></i>

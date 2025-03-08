@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import Footermain from "../footer/footermain";
-import Dept from "../Navbar/components/departments";
-import Header from "../sidebar/components/HeroSection";
-import BasicTabs from "./prod-speci";
-import Details from "./product-details";
-import Carousel from "./product-img";
+import Dept from "../Navbar/departments";
+import Header from "../sidebar/HeroSection";
+import BasicTabs from "../buy products/prod-speci";
+import Details from "../buy products/product-details";
+import Carousel from "../buy products/product-img";
 
 
 function Buy() {

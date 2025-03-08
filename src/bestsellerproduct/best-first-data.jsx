@@ -1,12 +1,7 @@
 import { ShoppingBag } from "lucide-react"
-import axios from 'axios'
-import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 export default function Sellerdata(props){
-//  useEffect(()=>{
-//  axios.get('https://fakestoreapi.com/products')
-//  .then(res=>res.json())
-//  .then(json=>console.log(json))
-//  },[])
+  const navigate =useNavigate();
     const getStatusClass = (status) => {
         switch (status) {
           case "New":
@@ -28,7 +23,7 @@ export default function Sellerdata(props){
         <p className={`badge ${getStatusClass(status)} w-14 text-center absolute top-3`}>
               {status}
               </p>
-        <p className="pb-2">{title}</p>
+        <p className="pb-2 cursor-pointer hover:text-red-500" onClick={()=>navigate("/shop")}>{title}</p>
         <p className="pb-2 text-xl text-red-500">{price}</p>
         <i className="fa-solid fa-star text-amber-500"></i>
         <i className="fa-solid fa-star text-amber-500"></i>

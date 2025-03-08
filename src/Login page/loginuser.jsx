@@ -24,11 +24,11 @@ export default function Loginuser(){
                 <input type="text"{...register("Username",{ required:true  })} placeholder="Username or Email Address" className="lg:w-96 w-60 p-3 rounded-md" />
                 {errors.Username && <p role="alert" className="text-red-500">*Username or Email Required</p>}
                 </div>
-                <div className="pt-3 relative">
+                <div className="pt-3 relative ">
                 <input type="password" {...register("Password",{ required:true  })} placeholder="Password" className="lg:w-96 w-60 p-3 rounded-md" />
                 {errors.Password && <p role="alert" className="text-red-500">*Password is Required</p>}
                 <div className="">
-                <a href=""className="absolute top-5 lg:left-80 left-40 hover:text-red-500">Forget?</a>
+                <a href=""className="absolute top-6 lg:left-80 left-40 hover:text-red-500">Forget?</a>
                 </div>
                 </div>
                <div className="pt-4">

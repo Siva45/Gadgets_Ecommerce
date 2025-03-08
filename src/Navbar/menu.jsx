@@ -1,4 +1,4 @@
-import Dept from "./components/departments"
+import Dept from "./departments"
 export default function Nav(){
     return(
         <Dept/>

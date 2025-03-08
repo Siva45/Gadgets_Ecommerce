@@ -1,4 +1,4 @@
-import Header from "./components/HeroSection"
+import Header from "./HeroSection"
 export default function Home(){
     return( 
         <>

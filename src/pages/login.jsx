@@ -1,8 +1,8 @@
 import Footermain from "../footer/footermain"
-import Dept from "../Navbar/components/departments"
-import Header from "../sidebar/components/HeroSection"
-import Loginuser from "./loginuser"
-import Register from "./register"
+import Dept from "../Navbar/departments"
+import Header from "../sidebar/HeroSection"
+import Loginuser from "../Login page/loginuser"
+import Register from "../Login page/register"
 export default function Login(){
     return(
         <>
@@ -14,7 +14,7 @@ export default function Login(){
                     <p className="sm:text-4xl font-bold">Login / Register</p>
                     <p className="font-bold">Home // <span className="text-red-500">Login-Register</span></p>
                 </div>
-                <div className="div">
+                <div className="">
                     <img src="login-img.webp" alt="" className="  w-full md:h-40 h-24" />
                 </div>
            </div>

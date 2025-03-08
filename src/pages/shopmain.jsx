@@ -1,11 +1,11 @@
 
-import Dept from "../Navbar/components/departments";
-import Header from "../sidebar/components/HeroSection";
-import Newproducts from "./newproducts";
-import ProductFilter from "./productfilter";
-import ShopCategory from "./shopcategory";
-import Shopimg from "./shopimg";
-import Sparingsales from "./sparingsales";
+import Dept from "../Navbar/departments";
+import Header from "../sidebar/HeroSection";
+import Newproducts from "../shop/newproducts";
+import ProductFilter from "../shop/productfilter";
+import ShopCategory from "../shop/shopcategory";
+import Shopimg from "../shop/shopimg";
+import Sparingsales from "../shop/sparingsales";
 import Footermain from "../footer/footermain";
 
 

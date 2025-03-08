@@ -1,7 +1,9 @@
 import React from 'react'
 import Drawer from 'react-modern-drawer'
+import { useNavigate } from "react-router-dom";
 import 'react-modern-drawer/dist/index.css'
 export default function Drawers   () {
+        const navigate =useNavigate();
     const [isOpen, setIsOpen] = React.useState(false)
     const toggleDrawer = () => {
         setIsOpen((prevState) => !prevState)
@@ -22,12 +24,12 @@ export default function Drawers   () {
                 <div  className="md:hidden absolute right-20 top-14 text-black   ">
                     
                <ul className="  text-center ">
-               <a href=""><li className="pb-4 divide-x-4">Home</li></a>
+               <a href=""><li className="pb-4 divide-x-4"onClick={()=>navigate("/")}>Home</li></a>
                <a href=""><li className="pb-4">About</li></a> 
-               <a href=""><li className="pb-4">Shop</li></a> 
+               <a href=""><li className="pb-4"onClick={()=>navigate("/shop")}>Shop</li></a> 
                <a href=""><li className="pb-4">Pages</li></a>
                <a href=""><li className="pb-4">Blog</li></a> 
-               <a href=""><li className="pb-4">Contact</li></a> 
+               <a href=""><li className="pb-4"onClick={()=>navigate("/login")}>Contact</li></a> 
             </ul>
               
              </div>

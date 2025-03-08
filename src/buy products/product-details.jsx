@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Component } from "./addcart";
+// import { Component } from "./addcart";
 import { useEffect} from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -45,7 +45,7 @@ export default function Details() {
                         <p>{input}</p>
                         <button onClick={add}>+</button>
                     </div>
-                    <p className="border-2 rounded-full p-3 hover:bg-red-500 hover:text-white"><Component/></p>
+                    <p className="border-2 rounded-full p-3 hover:bg-red-500 hover:text-white cursor-pointer">Add to Cart</p>
                     
                 </div>
                 <div className="flex justify-items-start gap-3 pb-5">
