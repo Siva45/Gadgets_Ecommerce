@@ -1,8 +1,17 @@
+import AOS from "aos";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
 export default function Service() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Animation duration in milliseconds
+          once: false, // Animation occurs only once
+        });
+      }, []);
     return (
         <>
-            <section className="flex xl:gap-20 grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4  justify-items-center  xl:justify-evenly bg-slate-200 pt-12 pb-12 mt-5 ml-3 mr-3">
-                <div className="flex items-center gap-6  pb-5 pt-5">
+            <section className=" xl:gap-20 grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-4  justify-items-center  xl:justify-evenly bg-slate-200 pt-12 pb-12 mt-5 ml-3 mr-3">
+                <div className="flex items-center gap-6  pb-5 pt-5 " data-aos="fade-up">
                     <i className="fa-regular fa-message text-4xl text-red-500"></i>
                     <div className="">
                         <p className="text-lg  font-bold">SUPPORT 24/7</p>
@@ -10,7 +19,7 @@ export default function Service() {
                     </div>
                 </div>
 
-                <div className="flex items-center gap-6 pb-5 pt-5">
+                <div className="flex items-center gap-6 pb-5 pt-5"data-aos="fade-up">
                     <i className="fa-solid fa-person-walking-arrow-loop-left text-4xl text-red-500"></i>
                     <div className="">
                         <p className="text-lg  font-bold ">EASY RETURNS</p>
@@ -18,7 +27,7 @@ export default function Service() {
                     </div>
                 </div>
 
-                <div className="flex items-center gap-6 pb-5 pt-5">
+                <div className="flex items-center gap-6 pb-5 pt-5"data-aos="fade-up">
                     <i className="fa-regular fa-credit-card text-4xl text-red-500"></i>
                     <div className="">
                         <p className="text-lg  font-bold ">CARD PAYMENT</p>
@@ -26,7 +35,7 @@ export default function Service() {
                     </div>
                 </div>
 
-                <div className="flex items-center gap-6  pb-5 pt-5">
+                <div className="flex items-center gap-6  pb-5 pt-5"data-aos="fade-up">
                     <i className="fa-solid fa-truck-fast text-4xl text-red-500 "></i>
                     <div className="">
                         <p className="text-lg  font-bold">FREE SHIPPING</p>

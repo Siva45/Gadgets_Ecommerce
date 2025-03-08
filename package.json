@@ -15,6 +15,7 @@
     "@mui/material": "^5.16.14",
     "@radix-ui/react-dialog": "^1.1.1",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "axios": "^1.8.2",
     "flowbite-react": "^0.10.1",
     "localforage": "^1.10.0",

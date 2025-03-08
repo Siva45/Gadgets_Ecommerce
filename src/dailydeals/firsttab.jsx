@@ -1,4 +1,13 @@
+import AOS from "aos";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
 export default function FirstTab(){
+     useEffect(() => {
+            AOS.init({
+              duration: 1000, // Animation duration in milliseconds
+              once: false, // Animation occurs only once
+            });
+          }, []);
     const Tabs=[{
         image:"mobile.webp",
         name:"D-Phone Android Latest UI New XP",
@@ -36,8 +45,8 @@ return(
     <section className="pb-10 overflow-hidden  bg-no-repeat">
     
         <div className="flex gap-3 items-center relative ">
-            <img src={item.image} alt="" className="transition duration-400 ease-in-out hover:scale-110" />
-            <div className="">
+            <img src={item.image} alt="" className="transition duration-400 ease-in-out hover:scale-110" data-aos="fade-right" />
+            <div className=""data-aos="fade-left">
                 <h1 className="">{item.name}</h1>
                 <p className="pb-2 text-red-500">{item.description}</p>
                 <i class="fa-solid fa-star text-amber-500"></i>

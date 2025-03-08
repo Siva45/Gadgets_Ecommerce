@@ -24,12 +24,12 @@ export default function Drawers   () {
                 <div  className="md:hidden absolute right-20 top-14 text-black   ">
                     
                <ul className="  text-center ">
-               <a href=""><li className="pb-4 divide-x-4"onClick={()=>navigate("/")}>Home</li></a>
-               <a href=""><li className="pb-4">About</li></a> 
-               <a href=""><li className="pb-4"onClick={()=>navigate("/shop")}>Shop</li></a> 
-               <a href=""><li className="pb-4">Pages</li></a>
-               <a href=""><li className="pb-4">Blog</li></a> 
-               <a href=""><li className="pb-4"onClick={()=>navigate("/login")}>Contact</li></a> 
+               <li className="pb-4 divide-x-4 cursor-pointer hover:text-red-500"onClick={()=>navigate("/")}>Home</li>
+               <li className="pb-4 cursor-pointer hover:text-red-500">About</li>
+               <li className="pb-4 cursor-pointer hover:text-red-500"onClick={()=>navigate("/shop")}>Shop</li>
+               <li className="pb-4 cursor-pointer hover:text-red-500">Pages</li>
+               {/* <li className="pb-4 cursor-pointer hover:text-red-500">Blog</li> */}
+               <li className="pb-4 cursor-pointer hover:text-red-500"onClick={()=>navigate("/login")}>Contact</li>
             </ul>
               
              </div>

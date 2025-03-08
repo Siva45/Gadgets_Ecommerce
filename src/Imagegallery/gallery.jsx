@@ -1,18 +1,26 @@
+import AOS from "aos";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
 export default function Sale() {
-    
+       useEffect(() => {
+                    AOS.init({
+                      duration: 1000, // Animation duration in milliseconds
+                      once: false, // Animation occurs only once
+                    });
+                  }, []);
     return (
         <>
             <section className="  lg:flex block gap-5 items-center justify-center ml-3 mr-3">
                 <div className="first relative pt-6 ">
                     <img src="slider4-bg1.webp" alt="" className="sm:h-96" />
                     <div className="first-content sm:flex block items-center absolute sm:bottom-36 sm:left-14 bottom-20 text-center justify-center ">
-                        <div className="animate-slideUp">
+                        <div className=""data-aos="fade-right">
                             <h1 className="md:text-3xl text-xl text-white font-bold pb-5">Bang & Olufsen <br />  Smart Speaker</h1>
                             <p className="text-white font-bold pb-7">Wireless Connection With  Computer, Laptop & TV</p>
                             <a href="" className="bg-white p-3 hover:bg-red-500">SHOP NOW <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                         <div className="first-img">
-                            <img src="galleryimg1.webp" alt="" className="pl-11 pt-7 animate-slideLeft"/>
+                            <img src="galleryimg1.webp" alt="" className="pl-11 pt-7 " data-aos="fade-left" />
                         </div>
                     </div>
                 </div>

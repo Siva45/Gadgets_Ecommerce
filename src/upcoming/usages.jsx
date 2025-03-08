@@ -1,6 +1,14 @@
 
-
+import AOS from "aos";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
 export default function UpSales() {
+      useEffect(() => {
+                AOS.init({
+                  duration: 1000, // Animation duration in milliseconds
+                  once: false, // Animation occurs only once
+                });
+              }, []);
     const coming = [{
         image: "pr1.webp",
         description: "Sparing Sales Coming",
@@ -24,7 +32,7 @@ export default function UpSales() {
             
             <section className=" pt-12 gap-7 m-5 grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 ">
             {coming.map((item, index) => (
-                  <div className="relative overflow-hidden  bg-no-repeat  ">
+                  <div className="relative overflow-hidden  bg-no-repeat  " data-aos="fade-right">
                     <img src={item.image} alt="" className="transition duration-700 ease-in-out hover:scale-110"/>
                     <div className="absolute lg:top-10 md:top-5 xl:top-12 top-4 left-3 text-center">
                         <p className="text-white animate-slidein">{item.description}</p>
